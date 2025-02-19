@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ff6b81;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flower-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.flower-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flower-card h2 {
+    color: #ff6b81;
+    margin-top: 10px;
+}
+
+.flower-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.flower-card img {
+    width: 50%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+@media (min-width: 769px) {
+    .flower-card:hover {
+        transform: scale(1.05);
+    }
+}
+
+.flower-card.active {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .flower-card {
+        width: 100%;
+    }
+}
